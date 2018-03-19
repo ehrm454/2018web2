@@ -1,0 +1,7 @@
+*{margin:0; padding:0;
+}
+.logo{  height: 300px;  width:300px;  background-color: black;  }
+header{height:75px;background-color:black; border:1px}
+.menu{}
+.menu li{}
+.menu a{float:right; line-height:75px; color:white; padding: 0 15px;display:block;}
