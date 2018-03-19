@@ -6,20 +6,24 @@ header{width: 100%; height: 60px; background-color:black;
 .home{float: right;margin-top: 20px;font-weight: bold; color:red; margin-right:10px;}
 .home1{float:right; margin-top:20px;font-wight:bold; margin-right:10px;}
 .home2{float:right; margin-top:20px;font-wight:bold;}
-.logoimg img{width: 350px; height: 30px;margin-top: 15px; margin-left:20px;}
-#img1 img{width: 500px;
+.logoimg img{width: 250px; height: 30px;margin-top: 15px; margin-left:20px;}
+#img1 img{width: 600px;
     height: 800px;
     float: left;}
 footer{width: 1280px; height: 100px; background-color:black; font-size:15px; color: white;margin-top: -10px;}
 footer p{text-align: center;font-weight: bold;}
-.22{margin-right:10px;}
+.kong{width:100%; height:633px;}
+.kongkong{position: relative; left:30px; top:20px;}
+.table{margin-right:10px;}
 table.kongisahang {
     border-collapse: separate;
     border-spacing: 1px;
     text-align: left;
-    line-height: 1.5;
+    line-height: 2.0;
     border-top: 1px solid #ccc;
-    margin : 20px 10px;
+    margin-right:30px;
+    margin-top:40px;
+    font-size:11px;
 }
 table.kongisahang th {
     width: 150px;
