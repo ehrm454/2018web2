@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        *{margin: 0;padding: 0;}
+        a{text-decoration:none; color:#000000;}
+        a:hover{color:#ff0000;}
+        #a3{
+            width: 1000px;
+            height: 20px;}
+        nav{float:right;}
+        nav ul{padding-top:10px;}
+        nav ul li {float:right;padding:0 10px;list-style:none; w}
+        header{width:1000px; margin: 0 auto; }
+        /*      드롭다운       */
+        nav ul li:first-child{border-left:none;}
+        #a{width:1000px; height:18px;}
+        #a1{width:1000px; height:10px;}
+        #tittle > img{width: 220px;
+            height: 42px; float:left;}
+        #tittle{text-align:center;}
+        #menu{float: right;padding-top: 10px; width: 1000px; margin: 0 auto;}
+        #menu ul li{float: left;width: 125px;height: 40px;line-height: 40px;text-align: center;font-size: 15px;
+            position: relative;z-index: 2; list-style:none; background-color: #0e90d2; color:white;}
+        #menu ul li > ul > li{height: 0px;overflow: hidden;transition: 0.5s;background-color:white;}
+        #menu ul li:hover{background-color: dodgerblue;color: #fff;}
+        #menu ul li:hover > ul > li{height: 40px;line-height: 40px;}
+        #menu ul li > ul > li:hover a{color: #fff;}
+        /*      검색창       */
+        #search{height:40px;width:360px;border:0;background:#ffffff;float:right; margin: 0 auto;}
+        input{font-size:16px; width:250px; height: auto; padding:10px; border:0.8px solid #1b5ac2; outline:none; float:left; margin: 0 auto;}
+        button{width:36px; height:36px; border:0; background:#1b5ac2; outline:none; float:left; color:#ffff; position: absolute; }
+        /*  이미지 슬라이드   */
+        section{width:1000px; height: 700px; margin: 0 auto;}
+        #slide_wrap{width: 1000px; height: 500px; overflow: hidden; text-align: center;}
+        #slide_box{width: 400%; height: 500px;}
+        #slide_box > li {width: 1000px; height: 500px; float: left; list-style: none;}
+        #slide_box > li > img {width: 1000px; height: 500px; float: left;}
+        /* 공지사항 */
+        table.type04 {border-collapse: separate;border-spacing: 2px;text-align: left;line-height: 1.5;border-top: 1px solid #ccc;margin : 20px 10px;}
+        table.type04 th {width: 750px;padding: 10px;vertical-align: top;border-bottom: 1px solid #ccc; font-size:15px;}
+        table.type04 td {width: 150px;padding: 10px;vertical-align: top;border-bottom: 1px solid #ccc; font-size:15px;}
+        table.type04 #head{font-size:20px;}
+        table.type05 {border-collapse: separate;border-spacing: 2px;text-align: left;line-height: 1.5;border-top: 1px solid #ccc;margin : 20px 10px;}
+        table.type05 th {width: 750px;padding: 10px;vertical-align: top;border-bottom: 1px solid #ccc; font-size:13px;}
+        table.type05 td {width: 150px;padding: 10px;vertical-align: top;border-bottom: 1px solid #ccc;}
+        table.type05 #head{font-size:20px;}
+        #first_table{width:50%; float:left;}
+        #second_table{width:50%; float:left;}
+        table {border-top: 1px solid #444444;border-collapse: collapse;}
+        th, td {border-bottom: 1px solid #444444;padding: 10px;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="a"></div>
+<header>
+<div id="tittle">
+            <img src="images/logo.png" height="42" width="220"/>
+    <div id="search">
+        <input type="text" placeholder="검색어입력">
+        <button type="button"><img src="images/search._button.gif"> alt="search"></button>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">사이트맵</a></li>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+        </ul>
+    </nav>
+
+</div>
+    <div id="a1"></div>
+    <div id="menu">
+        <ul>
+            <li>
+               학교소개
+                <ul>
+                    <li><a href="#">설립정신</a></li>
+                    <li><a href="#">학교장 인사말</a></li>
+                    <li><a href="#">학교연혁</a></li>
+                </ul>
+            </li>
+            <li>
+                알림마당
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">가정통신문</a></li>
+                    <li><a href="#">일정달력</a></li>
+                </ul>
+            </li>
+            <li>
+                입학안내
+                <ul>
+                    <li><a href="#">입학안내</a></li>
+                    <li><a href="#">입학안내블로그</a></li>
+                    <li><a href="#">입학문의 및 자료실</a></li>
+                </ul>
+            </li>
+            <li>
+                학생마당
+                <ul>
+                    <li><a href="#">교수학습자료실</a></li>
+                    <li><a href="#">동아리 및 방과후 활동</a></li>
+                    <li><a href="#">학생생활규정</a></li>
+                </ul>
+            </li>
+            <li>열린 마당
+                <ul>
+                    <li><a href="#">교장선생님께</a></li>
+                    <li><a href="#">취업게시판</a></li>
+                    <li><a href="#">진학게시판</a></li>
+                </ul></li>
+            <li>행정공개
+                <ul>
+                    <li><a href="#">학교운영원회</a></li>
+                    <li><a href="#">행정정보공개</a></li>
+                    <li><a href="#">교사게시판</a></li>
+                </ul></li>
+            <li>학교평가<ul>
+                <li><a href="#">2015학년도</a></li>
+                <li><a href="#">2016학년도</a></li>
+                <li><a href="#">2017학년도</a></li>
+            </ul>
+            </li>
+            <li>교사미니홈피
+                <ul>
+                    <li><a href="#">OOO</a></li>
+                    <li><a href="#">OOO</a></li>
+                    <li><a href="#">OOO</a></li>
+                </ul></li>
+        </ul>
+    </div>
+    </header>
+<section>
+    <div id="slide_wrap">
+        <ul id="slide_box">
+            <li><img src="./images/s1.jpg" alt="slide1"></li>
+            <li><img src="./images/s2.jpg" alt="slide2"></li>
+            <li><img src="./images/s3.jpg" alt="slide3"></li>
+            <li><img src="./images/s4.jpg" alt="slide3"></li>
+        </ul>
+    </div>
+    <div id="first_table">
+    <table class="type04">
+        <tr scope="row"><th id="head">공지사항</th><td></td></tr>
+        <tr>
+            <th scope="row">제 5회 교내 사장되기(Be the CEOs) 창업대회 안내</th>
+            <td>2018-04-04</td>
+        </tr>
+        <tr>
+            <th scope="row">2018학년도 국내외 취업상담사 채용</th>
+            <td>2018-04-04</td>
+        </tr>
+        <tr>
+            <th scope="row">학부모 총회 행사진행</th>
+            <td>2018-04-04</td>
+        </tr>
+    </table>
+    </div>
+    <div id="second_table">
+    <table class="type05">
+        <tr scope="row"><th id="head">가정통신문</th><td></td></tr>
+        <tr>
+            <th scope="row">123</th><td>123</td>
+        </tr>
+        <tr>
+            <th scope="row">123</th><td>123</td>
+        </tr>
+        <tr>
+            <th scope="row">123</th><td>123.</td>
+        </tr>
+    </table>
+    </div>
+</section>
+</body>
+<script>
+    var current = 0, max = $("#slide_box > li").length - 1, width = $("#slide_box > li > img").width();
+    function next() {
+        if(current >= max){
+            current = 0;
+            slide(current);
+        }else{
+            current++;
+            slide(current);
+        }
+    }
+    function slide(idx) {
+        $("#slide_box").animate({"margin-left" : -width * idx});
+    }
+    setInterval(function () {
+        next();
+    }, 2000);
+
+</script>
+</html>
