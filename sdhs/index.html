@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-
     <style>
         *{margin: 0;padding: 0;}
         a{text-decoration:none; color:#000000;}
@@ -13,8 +12,8 @@
             height: 20px;}
         nav{float:right;}
         nav ul{padding-top:10px;}
-        nav ul li {float:right;padding:0 10px;list-style:none; w}
-        header{width:1000px; margin: 0 auto; }
+        nav ul li {float:right;padding:0 10px;list-style:none; }
+        header{width:1000px; margin: 0 auto; height: 52px;}
         /*      드롭다운       */
         nav ul li:first-child{border-left:none;}
         #a{width:1000px; height:18px;}
@@ -34,52 +33,68 @@
         input{font-size:16px; width:250px; height: auto; padding:10px; border:0.8px solid #1b5ac2; outline:none; float:left; margin: 0 auto;}
         button{width:36px; height:36px; border:0; background:#1b5ac2; outline:none; float:left; color:#ffff; position: absolute; }
         /*  이미지 슬라이드   */
-        section{width:1000px; height: 700px; margin: 0 auto;}
+        section{width:1000px; height: 1000px; margin: 0 auto; background:#e0e0e0;}
         #slide_wrap{width: 1000px; height: 500px; overflow: hidden; text-align: center;}
         #slide_box{width: 400%; height: 500px;}
         #slide_box > li {width: 1000px; height: 500px; float: left; list-style: none;}
         #slide_box > li > img {width: 1000px; height: 500px; float: left;}
         /* 공지사항 */
-        table.type04 {border-collapse: separate;border-spacing: 2px;text-align: left;line-height: 1.5;border-top: 1px solid #ccc;margin : 20px 10px;}
-        table.type04 th {width: 750px;padding: 10px;vertical-align: top;border-bottom: 1px solid #ccc; font-size:15px;}
-        table.type04 td {width: 150px;padding: 10px;vertical-align: top;border-bottom: 1px solid #ccc; font-size:15px;}
+        table.type04 {border-collapse: separate;border-spacing: 2px;text-align: left;line-height: 1.5;margin : 20px 10px;}
+        table.type04 th {width: 750px;padding: 5px;vertical-align: top;border-bottom: 1px solid #ccc; font-size:15px;}
+        table.type04 td {width: 150px;padding: 7px;vertical-align: top;border-bottom: 1px solid #ccc; font-size:15px;}
         table.type04 #head{font-size:20px;}
-        table.type05 {border-collapse: separate;border-spacing: 2px;text-align: left;line-height: 1.5;border-top: 1px solid #ccc;margin : 20px 10px;}
-        table.type05 th {width: 750px;padding: 10px;vertical-align: top;border-bottom: 1px solid #ccc; font-size:13px;}
-        table.type05 td {width: 150px;padding: 10px;vertical-align: top;border-bottom: 1px solid #ccc;}
-        table.type05 #head{font-size:20px;}
-        #first_table{width:50%; float:left;}
-        #second_table{width:50%; float:left;}
-        table {border-top: 1px solid #444444;border-collapse: collapse;}
+        table {border-collapse: collapse;}
         th, td {border-bottom: 1px solid #444444;padding: 10px;}
+        #first_table{width:70%; float:left;}
+        #second_table{width:30%; float:right; margin-top: 9px; height:400px;}
+        #second_table img{width:300px; height:405px;}
+        #lunch{width:325px; height:210px; background: #8e8e8e; float:left;margin-left: 17px; border: 1px solid black; }
+        #lunch_img{width:250px; height:160px; margin-left:30px;margin-top: 10px;}
+        #lunch_lunch{font-size:20px; border-bottom: 1px solid black;}
+        #lunch_lunch img{float:right; margin-top:3px; margin-right:5px;}
+        #time{width:325px; height:210px; background: #8e8e8e; float:left;margin-left: 17px; border: 1px solid black; }
+        #calendar table {
+            table-layout:fixed;
+            border-collapse:collapse;
+            width:325px;
+        }
+        #calendar thead th {text-align:left;font-size:1px;font-weight: bold;background-color: white;}
+        #calendar tbody th {font-size:1px;padding:0 0.5em;text-align:center;background-color: #0e90d2;}
+        #calendar td  {font-size:1px;padding:0.25em 0.25em;width:14%;height:10px;text-align:left;vertical-align:top;}
+        .firRow {background:white;}
+        .sedRow {background:white;}
+        .sat {color: #254dd2}
+        .sun {color: #ff5845;}
+        #one{border-bottom: 1px solid black;}
+        footer{width:1000px; height:100px; background-color:#808080; margin: 0 auto;}
+
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
 </head>
 <body>
 <div id="a"></div>
 <header>
-<div id="tittle">
-            <img src="images/logo.png" height="42" width="220"/>
-    <div id="search">
-        <input type="text" placeholder="검색어입력">
-        <button type="button"><img src="images/search._button.gif"> alt="search"></button>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#">사이트맵</a></li>
-            <li><a href="#">홈</a></li>
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li>
-        </ul>
-    </nav>
+    <div id="tittle">
+        <img src="images/logo.png" height="42" width="220"/>
+        <div id="search">
+            <input type="text" placeholder="검색어입력">
+            <button type="button"><img src="images/search._button.gif"> alt="search"></button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+            </ul>
+        </nav>
 
-</div>
+    </div>
     <div id="a1"></div>
     <div id="menu">
         <ul>
             <li>
-               학교소개
+                학교소개
                 <ul>
                     <li><a href="#">설립정신</a></li>
                     <li><a href="#">학교장 인사말</a></li>
@@ -136,7 +151,7 @@
                 </ul></li>
         </ul>
     </div>
-    </header>
+</header>
 <section>
     <div id="slide_wrap">
         <ul id="slide_box">
@@ -147,37 +162,105 @@
         </ul>
     </div>
     <div id="first_table">
-    <table class="type04">
-        <tr scope="row"><th id="head">공지사항</th><td></td></tr>
-        <tr>
-            <th scope="row">제 5회 교내 사장되기(Be the CEOs) 창업대회 안내</th>
-            <td>2018-04-04</td>
-        </tr>
-        <tr>
-            <th scope="row">2018학년도 국내외 취업상담사 채용</th>
-            <td>2018-04-04</td>
-        </tr>
-        <tr>
-            <th scope="row">학부모 총회 행사진행</th>
-            <td>2018-04-04</td>
-        </tr>
-    </table>
+        <table class="type04">
+            <tr scope="row"><th id="head">공지사항</th><td></td></tr>
+            <tr>
+                <th scope="row">제 5회 교내 사장되기(Be the CEOs) 창업대회 안내</th>
+                <td>2018-04-04</td>
+            </tr>
+            <tr>
+                <th scope="row">2018학년도 국내외 취업상담사 채용</th>
+                <td>2018-04-04</td>
+            </tr>
+            <tr>
+                <th scope="row">학부모 총회 행사진행</th>
+                <td>2018-04-04</td>
+            </tr>
+        </table>
     </div>
     <div id="second_table">
-    <table class="type05">
-        <tr scope="row"><th id="head">가정통신문</th><td></td></tr>
-        <tr>
-            <th scope="row">123</th><td>123</td>
-        </tr>
-        <tr>
-            <th scope="row">123</th><td>123</td>
-        </tr>
-        <tr>
-            <th scope="row">123</th><td>123.</td>
-        </tr>
-    </table>
+                <img src="images/selectImageView (1).png" alt="img">
+    </div>
+    <div id="lunch">
+       <div id="lunch_lunch"> 오늘의 급식<img src="images/plus.png" height="20" width="20"/></div>
+
+        <img id=lunch_img src="images/lunch.png"></div>
+    <div id="time">
+        <div id="calendar"><table border="1">
+            <thead>
+            <tr>
+                <th colspan="7">4월 달력</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th class="sat">Sat</th>
+                <th class="sun">Sun</th>
+            </tr>
+            <tr class="firRow">
+                <td>&nbsp;</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td class="sat">5</td>
+                <td class="sun">6</td>
+            </tr>
+            <tr class="sedRow">
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td class="sat">12</td>
+                <td class="sun">13</td>
+            </tr>
+            <tr class="firRow">
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td class="sat">19</td>
+                <td class="sun">20</td>
+            </tr>
+            <tr class="sedRow">
+
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td class="sat">26</td>
+                <td class="sun">27</td>
+            </tr>
+            <tr class="firRow">
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>24</td>
+                <td>25</td>
+                <td class="sat">26</td>
+                <td class="sun">27</td>
+            </tr>
+            <tr class="sedRow">
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td colspan="4"></td>
+            </tr>
+            </tbody>
+        </table></div>
+        <div id="one"></div>
+        <div id="tow"></div>
     </div>
 </section>
+<footer>        </footer>
 </body>
 <script>
     var current = 0, max = $("#slide_box > li").length - 1, width = $("#slide_box > li > img").width();
