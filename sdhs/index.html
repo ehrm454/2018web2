@@ -7,9 +7,6 @@
         *{margin: 0;padding: 0;list-style:none;}
         a{text-decoration:none; color:#000000;}
         a:hover{color:#ff0000; }
-        #a3{
-            width: 1000px;
-            height: 20px;}
         nav{float:right;}
         nav ul{padding-top:10px;}
         nav ul li {float:right;padding:0 10px;list-style:none; }
@@ -34,7 +31,7 @@
         button{width:36px; height:36px; border:0; background:#1b5ac2; outline:none; float:left; color:#ffff; position: absolute; }
         /*  이미지 슬라이드   */
         section{width:1000px; height: 1000px; margin: 0 auto; background: #f9f9f9;}
-        #slide_wrap{width: 1000px; height: 500px; overflow: hidden; text-align: center;}
+        #slide_wrap{width: 1000px; height: 400px; overflow: hidden; text-align: center;}
         #slide_box{width: 400%; height: 500px;}
         #slide_box > li {width: 1000px; height: 500px; float: left; list-style: none;}
         #slide_box > li > img {width: 1000px; height: 500px; float: left;}
@@ -46,25 +43,15 @@
         table {border-collapse: collapse;}
         th, td {border-bottom: 1px solid #ccc;padding: 10px;}
         #first_table{width:70%; float:left;}
-
         /*  sub slide */
         #second_table{width:30%; float:right; margin-top: 9px; height:400px;overflow:hidden;
             position: relative;}
         #second_table>#subbox{width:300%;height: 100%;position: relative;}
-        #second_table>#subbox>li{width:50%;
-            height: 100%;float:left;}
+        #second_table>#subbox>li{width:50%;height: 100%;float:left;}
         /*#second_table img{width:300px; height:405px;}*/
         #subnav{position:absolute;bottom:12px;left:15px;background:white;}
-        #subnav>li{
-            border-radius: 50%;
-            width: 15px;
-            height: 15px;
-            background:#254dd2;
-            float:left;
-            margin:0 2px;
-        }
+        #subnav>li{border-radius: 50%;width: 15px;height: 15px;background:#254dd2;float:left;margin:0 2px;}
         /*  sub slide */
-
         #lunch{width:325px; height:210px; float:left;margin-left: 17px; border: 1px solid #ccc; }
         #lunch_img{width:250px; height:160px; margin-left:30px;margin-top: 10px;}
         #lunch_lunch{font-size:20px; border-bottom: 1px solid #ccc; background: #cccccc; }
@@ -83,16 +70,18 @@
         h2{color:white; text-align: center;}
         #reds{color:red;}
         footer{width:1000px; height:120px; background-color: #e0e0e0; margin: 0 auto;}
-        #footer_a{float:left; margin-left:40px; margin-top:25px; width:420px; background-color:white; height:35px; }
-        #footer_b{font:bold 12px Dotum; text-align: left; margin-left:310px;}
+        #footer_a{float:left; margin-left:60px; margin-top:25px; width:420px; background-color:white; height:35px; }
+        #footer_b{font:bold 12px Dotum; text-align: left; margin-left:330px;}
         #footer_b {color: #b4b4b4;}
         #footer_c{color: #6e6e6e}
         footer img{float:left; margin-left:40px; margin-top:20px;}
         footer nav ul{padding-top:10px; }
-        footer nav ul li {display:inline;border-left:1px solid #999;font:bold 12px Dotum;padding:0 10px;}
-
-
-
+        footer nav ul li {display:inline;border-left:1px solid #999;font:bold 12px Dotum;padding:0 10px; }
+        #last_img{width:960px; height:50px; float:left; text-align: center;
+            margin-top:35px; padding:9px; border: 1px solid #b4b4b4; margin-left:12px;}
+        #left{float:left; margin-top:5px; padding:7px; }
+        #right{float:right; margin-top:4px; padding:7px; margin-right:7px;}
+        #map_a{width:1000px; height:300px; margin-top:30px;}
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
@@ -206,9 +195,8 @@
     </div>
     <div id="second_table">
         <ul id="subbox">
-            <li><img src="images/selectImageView.png" alt="img"></li>
-            <li><img src="images/selectImageView%20(1).png" alt="img"></li>
-            <li><img src="images/selectImageView%20(2).png" alt="img"></li>
+            <li><img src="images/sub_img.png" alt="img"></li>
+            <li><img src="images/sub_img2.png" alt="img"></li>
         </ul>
         <ul id="subnav">
             <li></li>
@@ -216,7 +204,7 @@
         </ul>
     </div>
     <div id="lunch">
-       <div id="lunch_lunch"> &nbsp;&nbsp;오늘의 급식<img src="images/plus.png" height="20" width="20"/></div>
+        <div id="lunch_lunch"> &nbsp;&nbsp;오늘의 급식<img src="images/plus.png" height="20" width="20"/></div>
 
         <img id=lunch_img src="images/lunch.png"></div>
     <div id="time">
@@ -293,29 +281,42 @@
         <div id="one"> &nbsp;교육여행(2학년), 취업캠프(3학년)</div>
         <div id="tow"> &nbsp;수련회(1학년)</div>
     </div>
+    <div id="map">
+        <iframe id="map_a" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1330.1618078744277!2d126.9899566160633!3d37.53913958197982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca24eb401c3c3%3A0xcac6c402eb3ae54f!2z7ISc7Jq465SU7KeA7YWN6rOg65Ox7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1524535002343" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div id="last_img">
+        <img id="right" src="images/right.gif" width:6%>
+        <img id="left" src="images/left.gif" width:6%>
+        <img src="images/last_img.png" alt="img" width:12%>
+        <img src="images/last_img2.png" alt="img" width:12%>
+        <img src="images/last_img3.png" alt="img" width:12%>
+        <img src="images/last_img4.png" alt="img" width:12%>
+        <img src="images/last_img5.png" alt="img" width:12%>
+        <img src="images/last_img6.png" alt="img" width:12%>
+    </div>
+
+    </div>
 </section>
 <footer> <img id="footer_logo" src="images/logo.png" height="42" width="220"/>
     <div id="footer_a">
-    <nav>
-                <ul>
+        <nav>
+            <ul>
                 <li><a href="#">학교길안내</a></li>
                 <li><a href="#">저작권보호정책</a></li>
                 <li><a href="#">서비스이용약관</a></li>
                 <li><a id="reds" href="#">개인정보처리방침</a></li>
             </ul>
-            </nav>
+        </nav>
     </div>
     <br><br><br>
     <div id="footer_b">[04346]서울 용산구 회나무로12길 27 (이태원동, 서울디지텍고등학교)<br>
-    대표전화) 02 - 798 - 3641 ~ 3팩스)02- 794 - 0822<br>
+        대표전화) 02 - 798 - 3641 ~ 3팩스)02- 794 - 0822<br>
         <div id="footer_c">
-    Copyright (c) 2018 노성준. All rights reserved
+            Copyright (c) 2018 노성준. All rights reserved
         </div>
     </div>
 </footer>
 </body>
-
-
 <script>
     var current = 0, max = $("#slide_box > li").length - 1, width = $("#slide_box > li > img").width();
     function next() {
